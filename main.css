@@ -18,3 +18,7 @@ body {
     background-color: darkkhaki;
     text-align: center;
 }
+hr{
+    width: 300px;
+    height: 3 px solid blue;
+}
