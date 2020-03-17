@@ -8,6 +8,7 @@ body {
     max-width: 800px;
     min-height: 1000px;
     padding: 2em 2em 4em;
+    border-style: ridge;
 }
 
 .head {
