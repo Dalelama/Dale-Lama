@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>GDP</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="main.css">
+
+    <script src="assign.js" type="text/javascript"></script>
+</head>
+
+<body><br><br>
+    <div class="belt">
+        <h3>
+            World Gross Domestic Product
+        </h3>
+        <hr style="color: #2196F3" width="250px" height="5px">
+
+        <table>
+            <tr>
+                <td style="float: right">Country Code:</td>
+                <td><span id="spanCountryCode" style="color: mediumpurple"></span></td>
+            </tr>
+            <tr>
+                <td style="float: right">Country Name:</td>
+                <td><span id="spanCountryName" style="color: mediumpurple"></span></td>
+            </tr>
+            <tr>
+                <td style="float: right">GDP:</td>
+                <td><span id="spanValue" style="color: mediumpurple"></span></td>
+            </tr>
+            <tr>
+                <td style="float: right">Year:</td>
+                <td><span id="spanYear" style="color: mediumpurple"></span></td>
+            </tr>
+        </table><br>
+        <button onclick="goToNextCountry()">GDP &nbsp; Search</button>
+    </div>
+</body>
+
+</html>
