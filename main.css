@@ -1,7 +1,6 @@
 body {
     background-color: cornsilk;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
-    color: #545454;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
     margin: 0 auto;
@@ -32,7 +31,4 @@ padding: 10px 0 10px;
 }
 .frame{
 padding: 10px  0px  50px 60px;
-    
-
-
 }
