@@ -23,7 +23,7 @@ hr{
     height: 3 px solid blue;
 }
 h4{
-    float: right;
+    padding-left:700px;
 }
 ul:li{
 padding: 10px 0 10px;
