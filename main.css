@@ -25,3 +25,6 @@ hr{
 h4{
     float: right;
 }
+li{
+padding: 10px 0 10px;
+}
