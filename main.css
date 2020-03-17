@@ -24,10 +24,10 @@ hr{
 }
 h4{
     float: right;
-    padding: 10px 0 10px;
 }
 ul:li{
 padding: 10px 0 10px;
+    font-size: 14px;
 }
 .frame{
 padding: 50px 0 50px;
