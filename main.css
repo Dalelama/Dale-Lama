@@ -23,7 +23,7 @@ hr{
 }
 h4{
     padding-left:600px;
-    color:darkkhaki
+    color:darkgoldenrod;
 }
 ul:li{
 padding: 10px 0 10px;
@@ -31,4 +31,5 @@ padding: 10px 0 10px;
 }
 .frame{
 padding: 10px  0px  50px 60px;
+    border: 2 px solid darkkhaki;
 }
