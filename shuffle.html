@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Card Shuffle</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<style>
+    h2 {
+        background-color: #93e1f8;
+        width: 300px;
+        text-align: center;
+        margin: auto;
+        padding: 10px;
+    }
+</style>
+
+<body>
+    <br>
+    <p class="strip">A Deck of Cards</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2>Cards Shuffle</h2>
+    <img id="images">
+    <br>
+    <div id="crds" style="text-align: center">
+        <script>
+            Array.prototype.shuffle = function() {
+                var i = this.length,
+                    j, temp;
+                while (--i > 0) {
+                    j = Math.floor(Math.random() * (i + 1));
+                    temp = this[j];
+                    this[j] = this[i];
+                    this[i] = temp;
+                }
+                return this;
+            }
+
+            var arr = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', 'King', 'Ace'];
+            var result = arr.shuffle();
+
+            document.write(result);
+        </script>
+    </div>
+    <table>
+        <tr>
+            <td><img src="images/Club%20A.png" width="40" height="50"></td>
+            <td><img src="images/Club%202.png" width="40" height="50"></td>
+            <td><img src="images/Club%203.png" width="40" height="50"></td>
+            <td><img src="images/Club%204.png" width="40" height="50"></td>
+            <td><img src="images/Club%205.png" width="40" height="50"></td>
+            <td><img src="images/Club%206.png" width="40" height="50"></td>
+            <td><img src="images/Club%207.png" width="40" height="50"></td>
+            <td><img src="images/Club%208.png" width="40" height="50"></td>
+            <td><img src="images/Club%209.png" width="40" height="50"></td>
+            <td><img src="images/Club%2010.png" width="40" height="50"></td>
+            <td><img src="images/Club%20J.png" width="40" height="50"></td>
+            <td><img src="images/Club%20Q.png" width="40" height="50"></td>
+            <td><img src="images/Club%20K.png" width="40" height="50"></td>
+        </tr>
+        <tr>
+            <td><img src="images/Diamond%20A.png" width="40" height="50"></td>
+            <td><img src="images/Diamond%202.png" width="40" height="50"></td>
+            <td><img src="images/Diamond%203.png" width="40" height="50"></td>
+            <td><img src="images/Diamond%204.png" width="40" height="50"></td>
+            <td><img src="images/Diamond%205.png" width="40" height="50"></td>
+            <td><img src="images/Diamond%206.png" width="40" height="50"></td>
+            <td><img src="images/Diamond%207.png" width="40" height="50"></td>
+            <td><img src="images/Diamond%208.png" width="40" height="50"></td>
+            <td><img src="images/Diamond%209.png" width="40" height="50"></td>
+            <td><img src="images/Diamond%2010.png" width="40" height="50"></td>
+            <td><img src="images/Diamond%20J.png" width="40" height="50"></td>
+            <td><img src="images/Diamond%20Q.png" width="40" height="50"></td>
+            <td><img src="images/Diamond%20K.png" width="40" height="50"></td>
+        </tr>
+        <tr>
+            <td><img src="images/Heart%20A.png" width="40" height="50"></td>
+            <td><img src="images/Heart%202.png" width="40" height="50"></td>
+            <td><img src="images/Heart%203.png" width="40" height="50"></td>
+            <td><img src="images/Heart%204.png" width="40" height="50"></td>
+            <td><img src="images/Heart%205.png" width="40" height="50"></td>
+            <td><img src="images/Heart%206.png" width="40" height="50"></td>
+            <td><img src="images/Heart%207.png" width="40" height="50"></td>
+            <td><img src="images/Heart%208.png" width="40" height="50"></td>
+            <td><img src="images/Heart%209.png" width="40" height="50"></td>
+            <td><img src="images/Heart%2010.png" width="40" height="50"></td>
+            <td><img src="images/Heart%20J.png" width="40" height="50"></td>
+            <td><img src="images/Heart%20Q.png" width="40" height="50"></td>
+            <td><img src="images/Heart%20K.png" width="40" height="50"></td>
+        </tr>
+        <tr>
+            <td><img src="images/Spade%20A.png" width="40" height="50"></td>
+            <td><img src="images/Spade%202.png" width="40" height="50"></td>
+            <td><img src="images/Spade%203.png" width="40" height="50"></td>
+            <td><img src="images/Spade%204.png" width="40" height="50"></td>
+            <td><img src="images/Spade%205.png" width="40" height="50"></td>
+            <td><img src="images/Spade%206.png" width="40" height="50"></td>
+            <td><img src="images/Spade%207.png" width="40" height="50"></td>
+            <td><img src="images/Spade%208.png" width="40" height="50"></td>
+            <td><img src="images/Spade%209.png" width="40" height="50"></td>
+            <td><img src="images/Spade%2010.png" width="40" height="50"></td>
+            <td><img src="images/Spade%20J.png" width="40" height="50"></td>
+            <td><img src="images/Spade%20Q.png" width="40" height="50"></td>
+            <td><img src="images/Spade%20K.png" width="40" height="50"></td>
+        </tr>
+    </table>
+    <br><br><br>
+    <div class="top"><a href="index.html">Back to Top</a></div>
+    <br>
+    <hr>
+</body></html>
