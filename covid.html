@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>covid19</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="covid19.js" type="text/javascript"></script>
+</head>
+<style>
+    table {
+        padding: 30px 90px;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    h3 {
+        font-style: normal;
+        color: #c65656;
+        text-align: center;
+    }
+
+    td {
+        padding: 25px;
+    }
+
+    button {
+        width: 210px;
+        padding: 7px;
+        background: #eab72e;
+        color: white;
+        font-size: 17px;
+        border: 1px solid grey;
+
+        cursor: pointer;
+    }
+
+    .belt {
+        max-width: 500px;
+        height: 600px;
+        text-align: center;
+        margin: auto;
+        padding: 30px 0 50px;
+        background-image: url(img/covid.png);
+        background-size: 100%;
+        border: 1px solid grey;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .virus {
+        color: red;
+    }
+    .strip {
+    text-align: center;
+    font-size: 20px;
+    text-underline-position: under;
+    background-color: darkorange;
+}
+
+</style>
+
+<body>
+    <p class="strip">A Deck of Cards</p>
+    <br><br><br><br><br>
+    <div class="belt">
+        <h3>
+            Statewide <span class="virus">COVID19</span> Status
+        </h3>
+        <hr style="color: #2196F3" width="250px" height="5px">
+
+        <table>
+            <tr>
+                <td style="float: right">Date:</td>
+                <td>&nbsp;&nbsp;<span id="spanDate" style="color: #943dfa"></span></td>
+            </tr>
+            <tr>
+                <td style="float: right">State:</td>
+                <td>&nbsp;&nbsp;<span id="spanState" style="color: #943dfa"></span></td>
+            </tr>
+            <tr>
+                <td style="float: right">Fips:</td>
+                <td>&nbsp;&nbsp;<span id="spanFips" style="color: #943dfa"></span></td>
+            </tr>
+            <tr>
+                <td style="float: right">Cases:</td>
+                <td>&nbsp;&nbsp;<span id="spanCases" style="color: #943dfa"></span></td>
+            </tr>
+            <tr>
+                <td style="float: right">Deaths:</td>
+                <td>&nbsp;&nbsp;<span id="spanDeaths" style="color: #943dfa"></span></td>
+            </tr>
+        </table><br>
+        <button onclick="goToNextState()"><span class="virus">COVID19</span>&nbsp;&nbsp;Search </button>
+    </div>
+    <br><br><br><br>
+    <div class="top" style="text-align: center"><a href="index.html">Back to Top</a></div>
+    <br>
+</body>
+
+</html>
