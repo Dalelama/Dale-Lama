@@ -124,3 +124,8 @@ input[type="submit"] {
 .output {
     font-style: bold;
 }
+.doc{
+    padding: 0 40px 0;
+    text-align: justify;
+}
+
