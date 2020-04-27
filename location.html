@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Find MY Location</title>
+    <link rel="stylesheet" href="./main.css">
+    <meta charset='utf-8' />
+    <title>My Location</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v3.1.6/mapbox-gl-geocoder.min.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v3.1.6/mapbox-gl-geocoder.css' type='text/css' />
+</head>
+<style>
+    body {
+        max-width: 800px;
+        min-height: 1000px;
+        padding: 100px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        margin: 0 auto;
+        padding: 2em 2em 4em;
+        min-height: 1000px;
+    }
+
+
+    .loc {
+        color: white;
+        text-align: center;
+        width: 650px;
+        height: 50px;
+        padding: 26px;
+        background-color: olive;
+        margin: auto;
+    }
+
+    #map {
+        position: relative;
+        width: 700px;
+        height: 500px;
+        margin: 0 auto 100px;
+        border: 3 px solid black;
+    }
+
+    table {
+        margin: auto;
+        background-color: #ccffff;
+
+    }
+
+    .top {
+        text-align: center;
+    }
+
+</style>
+
+<body>
+    <br>
+    <p class="strip">Local Weather</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2 class="loc">Local Weather</h2>
+    <table>
+        <tr>
+            <td>
+                <h2></h2>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div id="map"></div>
+            </td>
+        </tr>
+    </table>
+
+
+    <!-- partial -->
+    <script src="./loco.js"></script>
+    <br><br><br>
+    <div class="top"><a href="index.html">Back to Top</a></div>
+    <br>
+    <hr>
+
+</body>
+
+</html>
